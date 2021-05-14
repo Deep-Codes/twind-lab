@@ -1,9 +1,9 @@
 import React from 'react';
 import { style } from 'twind/style';
-import useTw from './Twind';
+import { useTheme } from './ThemeProvider';
 
 const Button = ({ variant = 'primary', children }) => {
-  const tw = useTw();
+  const tw = useTheme();
   const button = style({
     // base
     base: `h-10 px-5 m-2 text-indigo-100 transition-colors duration-150 rounded-lg  block my-5`,
