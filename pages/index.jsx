@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Button from '../components/Buttons';
+import Button from '../components/Button';
 
 export default function Home() {
   return (
@@ -13,14 +13,10 @@ export default function Home() {
       <main className='max-w-3xl mx-auto mt-10'>
         <div className='max-w-7xl'>
           <h1 className='text-5xl font-bold ml-2 mb-10'>Buttons</h1>
-          <Button variant='purple' />
-          <Button variant='red' />
-          <Button variant='blue' />
-          <Button variant='purple' />
-          <Button variant='green' />
-          <Button variant='indigo' />
-          <Button variant='orange' />
-          <Button variant='green' />
+          <Button variant='brand'>Brand Button</Button>
+          <Button variant='danger'>Danger Button</Button>
+          <Button variant='purple'>Tailwind Button</Button>
+          <Button variant='green'>Tailwind Button</Button>
         </div>
       </main>
     </div>
